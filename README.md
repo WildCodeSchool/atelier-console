@@ -1,2 +1,2 @@
 # atelier-console
-Atelier à faire en binôme pour la découverte du terminal
+Atelier de découverte de la console

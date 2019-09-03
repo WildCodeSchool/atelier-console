@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Atelier Console : Voyage au centre de l'ordinateur</title>
+    <link
+            crossorigin="anonymous"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+            integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk="
+            rel="stylesheet"
+    />
+    <link href="css/showcase.css" rel="stylesheet" type="text/css"/>
+    <link href="css/prism.css" rel='stylesheet'>
+    <script
+            crossorigin="anonymous"
+            integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+            src="https://kit.fontawesome.com/2828f7885a.js"
+    ></script>
+    <link href="favicon.png" rel="icon" type="image/png"/>
+</head>
+
+<body>
+
+<!-- Begin Scroll Up Button -->
+
+<form action="#home">
+    <button id="toTop" title="Go to top">
+        <i class="fas fa-angle-up"></i>
+    </button>
+</form>
+<!-- End Scroll Up Button -->
+
+<!-- Begin Header -->
+<div class="header-wrapper" id="home">
+    <!-- Begin Hero -->
+    <section class="hero is-large">
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+            <img alt="WCS logo" class="wcs-logo" src="images/logo-WCS.png"/>
+            <div class="container has-text-centered">
+                <h1 class="subtitle">Atelier</h1>
+                <h2 class="title">Console</h2>
+                <h1 class="subtitle profession">Voyage au centre de l'ordinateur</h1>
+            </div>
+        </div>
+        <!-- End Hero Content-->
+    </section>
+    <!-- End Hero -->
+</div>
+<!-- End Header -->
+
+<!-- Begin Main Content -->
+<div class="main-content">
+    <div class="section-dark resume">
+        <div class="container">
+            <div
+                    class="columns is-multiline"
+                    data-aos="fade-in"
+                    data-aos-easing="linear"
+            >
+                <div class="column is-12 about-me">
+                    <h1 class="title has-text-centered section-title white">
+                        Atelier Console
+                    </h1>
+                </div>
+                <div class="column is-10 has-text-centered is-offset-1">
+                    <h2 class="subtitle white">
+                        Tu as déjà pu découvrir lors des quêtes et lors du cours une tonne de commande utile dans la
+                        console.<br>
+                        Le problème, c’est qu’il va t’être difficile de retenir tout ça en si peu de temps !
+                    </h2>
+                    <h3 class="white">
+                        Pas de stress, dans cet atelier tu vas juste te balader tranquillement dans ton ordinateur, en
+                        utilisant uniquement la console.<br>
+                        Tu peux donc fermer ton gestionnaire de fichier, il te sera totalement inutile pour ce voyage :
+                        lance la Console (appelée Terminal en anglais) et laisse-toi guider !<br><br>
+
+                        <b>Note :</b> si tu es sous Windows, utilise la console <code>git bash</code>.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Begin About Me Section -->
+    <div class="section-light">
+        <div class="container"
+             data-aos="fade-in"
+             data-aos-easing="linear">
+            <h3>Avant de voyager, visite ta propre maison !</h3>
+            <p>
+                Si tu viens juste d’ouvrir la console, tu devrais te trouver chez toi, dans ton dossier utilisateur.<br>
+                Pour être sûr de ça, tu peux exécuter la commande suivante :<br>
+                <code>cd ~</code><br>
+            </p>
+            <ul>
+                <li>la commande <code>cd</code> signifie change directory</li>
+                <li>le tilde <code>~</code> est un raccourci vers ton dossier utilisateur.</li>
+            </ul>
+            <p>
+                Cette commande est sensée accéder à un dossier, mais si tu l’exécutes avec le paramètre <code>~</code>,
+                elle te permet de te téléporter dans ta maison !<br><br>
+                Tu devrais observer une invite de commande qui ressemble plus ou moins à ça :<br>
+                <code>wilder@wilder-ThinkPad-T430:~$</code>
+            </p>
+            <ul>
+                <li>Le premier élément avant le <code>@</code>, c’est toi ! (ton nom d’utilisateur).</li>
+                <li>Le second élément après le <code>@</code> jusqu’aux deux points <code>:</code>, c’est le nom de ton
+                    ordinateur.
+                </li>
+                <li>Après les <code>:</code>, se trouve ta position dans l’ordinateur (ici le tilde <code>~</code>).
+                </li>
+                <li>Après le <code>$</code> se trouveront les commandes que tu pourras tapper !</li>
+            </ul>
+            <p>
+                Attention, ton dossier utilisateur ne correspond pas à l’endroit le plus profond de ton ordinateur
+                (appelé la racine) !<br>
+
+                Si tu veux connaître le chemin réel qui mène jusqu’à ton dossier utilisateur, tu peux utiliser la
+                commande suivante :
+                <code>pwd</code>
+            </p>
+            <p>
+                La commande <code>pwd</code> sert à afficher le chemin réel du dossier où tu te trouves.<br>
+                Ici tu es donc dans ton dossier utilisateur, représenté par le tilde <code>~</code>, le chemin qui
+                apparaît est probablement le suivant :<br>
+                <code>/home/wilder</code>
+            </p>
+            <ul>
+                <li><code>/home/</code> contient toutes les dossiers utilisateurs de cet ordinateur</li>
+                <li><code>wilder</code> (ou ton nom d’utilisateur) qui contient ton dossier utilisateur !</li>
+            </ul>
+            <p>
+                <b>Note : </b> sur Windows et OSX le chemin ne sera pas le même, mais tu observeras une assez grosse
+                ressemblance !
+            </p>
+        </div>
+        <div class="container"
+             data-aos="fade-in"
+             data-aos-easing="linear">
+            <h3>Connaître ses racines</h3>
+            <p>
+                Maintenant que tu connais le chemin (appelé <code>path</code> en anglais) vers ton dossier utilisateur,
+                observons-le de nouveau.<br><br>
+                Tu peux constater que le chemin commence par un slash <code>/</code> et chaque dossier est séparé par un
+                <code>/</code>.
+            </p>
+            <p>
+                Le premier slash <code>/</code> représente le chemin le plus profond de ton ordinateur : la racine
+                (<code>root</code> en anglais).<br>
+                Va le visiter ! Pour cela, utilise la commande qui permet d’accéder à un dossier, en lui précisant le
+                chemin vers la racine :<br>
+                <code>cd /</code>
+            </p>
+            <p>
+                Et comme il fait sombre là-dedans, utilisons la commande qui permet d’afficher la liste des fichiers et
+                dossiers :<br>
+                <code>ls</code>
+            </p>
+            <p>
+                Oula, il y a un paquet de fichiers, tous affichés les uns à côté des autres ! Pas très pratique pour s’y
+                retrouver.<br>
+                Si tu veux afficher la liste des fichiers verticalement, avec en plus des détails, utilise la commande :<br>
+                <code>ls -l</code>
+            </p>
+        </div>
+        <div class="container"
+             data-aos="fade-in"
+             data-aos-easing="linear">
+            <h3>Pause repas temporaire</h3>
+            <p>
+                Tu as vu précédemment l’ensemble des lieux qu’il t’est possible de visiter à partir de la racine.
+                Cependant, comme certains sont plus dangereux que d’autres, tu vas commencer par le plus le plus sûr de
+                ta machine : <code>/tmp</code> !<br>
+                Accède au dossier <code>/tmp</code> et affiche tout ce qu’il contient.<br><br>
+
+                C’est le bordel là-dedans ! En fait, ce dossier contient des fichiers temporaires, qui sont parfois
+                utilisés lors de l’installation ou l'exécution de programmes sur ton ordinateur.<br><br>
+
+                Tu peux supprimer ou créer ce que tu veux sans risque dans ce dossier.<br>
+                Tu vas donc créer un fichier afin de polluer un peu plus ton ordi !<br>
+                <code>echo "Je suis moisi" > vieuxtacos.txt</code>
+            </p>
+            <p>Observe en détail cette commande :</p>
+            <ul>
+                <li>la commande <code>echo</code> sert à afficher du texte dans la console.</li>
+                <li>le signe <code>></code> sert à stocker le résultat d’une commande précédente dans un fichier,
+                    spécifié ensuite. Tu peux l’utiliser avec tout ce que tu veux, pas uniquement <code>echo</code>.
+                </li>
+            </ul>
+            <p>
+                En affichant la liste des fichiers, tu devrais voir ton nouveau <code>vieuxtacos.txt</code> !<br>
+                Si tu veux afficher le contenu du fichier, tu peux utiliser la commande suivante :<br>
+                <code>cat vieuxtacos.txt</code>
+            </p>
+            <p>
+                Pas terrible d’avoir un vieux tacos moisi qui traine au fond de son ordinateur, tu vas pouvoir améliorer
+                ça.<br>
+                <code>echo "Je ne suis pas moisi" > vieuxtacos.txt</code>
+            </p>
+            <p>
+                Si tu affiches le contenu du fichier, tu peux constater qu’il a été écrasé par le nouveau texte.<br>
+                C’est mieux, mais un vieux tacos, même s’il n’est pas moisi, ça reste un vieux tacos.<br>
+                Le mieux serait de renommer le fichier en autre chose, grâce à la commande suivante :<br>
+                <code>mv vieuxtacos.txt tacos.txt</code><br><br>
+                La commande <code>mv</code> sert à déplacer un fichier d’un lieu à un autre, mais elle peut aussi être
+                utilisée pour renommer un fichier !<br>
+            </p>
+            <p>
+                Ce tacos, n'étant plus moisi, était trop appétissant et tu l'as mangé. Supprime-le grâce à la commande
+                suivante :<br>
+                <code>rm tacos.txt</code><br><br>
+                Si tu affiches le contenu du répertoire, le fichier ne s’y trouve plus, il a été supprimé
+                définitivement.
+            </p>
+            <p>
+                Il n’y a pas vraiment de “poubelle” dans Linux, fais donc attention à ce que tu supprimes : il te serait
+                extrêmement difficile de le récupérer !
+            </p>
+        </div>
+        <div class="container"
+             data-aos="fade-in"
+             data-aos-easing="linear">
+            <h3>Les gratte-ciels des logiciels</h3>
+            <p>
+                Le ventre plein, tu vas pouvoir continuer la visite.<br>
+                Va faire un tour à l’endroit où il t'est conseillé d’installer les logiciels sur ton ordinateur : <code>/opt</code><br><br>
+            </p>
+            <p>
+                Pour le fun, tu vas essayer de créer un dossier ici, avec la commande :<br>
+                <code>mkdir tacosfolder</code><br><br>
+
+                Tu devrais avoir la réponse suivante :<br>
+                <code>mkdir: cannot create directory tacosfolder: Permission denied</code>
+            </p>
+            <p>
+                En effet, ce dossier (et plusieurs autres) est protégé, comme tu n’as pas précisé qui tu étais, Linux ne
+                te laisse pas faire n’importe quoi ici.<br><br>
+
+                Tu peux cependant, du moment que tu as assez de droits, forcer les choses avec la commande suivante
+                :<br>
+
+                <code>sudo</code><br><br>
+
+                Seule, la commande n’est pas utile, il faut la placer devant la commande que tu veux forcer : essaie de
+                la combiner avec la commande précédente.
+            </p>
+            <p>
+                Plutôt que de retaper toute la commande, utilise la flèche haut de ton clavier. Le flèches haut/bas te
+                permettent de te balader dans l’historique des commandes que tu as déjà tapé ! Utilise la flèche gauche
+                pour revenir au début de la ligne et taper <code>sudo</code> (et un espace).<br><br>
+
+                Tu peux aussi utiliser les raccourcis <code>Ctrl+A</code> et <code>Ctrl+E</code> pour aller
+                automatiquement au début et à la fin de la ligne.
+            </p>
+            <p>
+                Tu devrais obtenir la ligne suivante :<br>
+                <code>sudo mkdir tacosfolder</code><br><br>
+                La console devrait te demander le mot de passe de ta session pour vérifier tes privilèges :<br>
+                <code>[sudo] password for wilder:</code><br>
+                Quand tu saisis un mot de passe dans le terminal, rien ne s'affiche à l'écran : c'est normal, mais
+                rassure-toi, ce que tu tapes est bien pris en compte.
+            </p>
+            <p>
+                Une fois entré, le dossier est créé et tu peux le voir en affichant le contenu du dossier
+                <code>/opt</code>.<br><br>
+
+                Accède au dossier <code>tacosfolder</code>, et essaie de créer un fichier <code>haricots</code> avec la
+                commande <code>echo</code> vue précédemment.<br><br>
+
+                Tu devrais de nouveau avoir un message d’erreur : utilise la commande <code>sudo</code> vu juste avant
+                pour forcer la création du fichier. Ça ne marche toujours pas !<br><br>
+
+                Diantre, il va falloir trouver un moyen de donner à ton dossier les droits nécessaires à la création de
+                fichiers. Mais nous ne verrons pas ça dans cet atelier, donc tant pis : supprimons le dossier vide !<br><br>
+
+                Pour cela revient dans le dossier précédent. Plutôt que de devoir retaper le chemin à chaque fois,
+                utilise le raccourci suivant :<br>
+                <code>cd ..</code>
+            </p>
+            <p>
+                Cette commande permet de remonter d’un dossier dans l'arborescence.<br><br>
+
+                Sous Linux, un seul point <code>.</code> signifie le dossier actuel et deux points <code>..</code>
+                signifient le dossier parent.<br>
+
+                Si tu écris la commande :<br>
+                <code>cd .</code><br>
+
+                Bah en fait, tu accèdes au dossier actuel, donc ça ne fait rien !
+            </p>
+            <p>
+                Maintenant que tu es sûr d’être au bon endroit, supprime le dossier avec la commande suivante :<br>
+                <code>sudo rm -r tacosfolder</code>
+            </p>
+            <ul>
+                <li>la commande <code>sudo</code> sert à forcer la main, car tu es dans un dossier protégé</li>
+                <li>la commande <code>rm</code> permet de supprimer un fichier</li>
+                <li>le paramètre <code>-r</code> sert à préciser que tu veux supprimer un dossier et tout ce qu’il
+                    contient
+                </li>
+            </ul>
+        </div>
+        <div class="container"
+             data-aos="fade-in"
+             data-aos-easing="linear">
+            <h3>Les montagnes de documents</h3>
+            <p>
+                Pour la suite et fin de cet atelier, reviens dans ton dossier utilisateur, puis dans son sous-dossier
+                <code>Documents</code>.<br><br>
+
+                Plutôt que de devoir taper tout le chemin jusque là, sachant que le raccourci vers ton dossier
+                utilisateur est le tilde <code>~</code>, tu peux écrire la commande :<br>
+                <code>cd ~/Documents</code>
+            </p>
+            <p>
+                Profites-en pour utiliser la commande qui te permet de voir le chemin réel de l'endroit où tu te situes.<br>
+
+                Ici nous allons voir tous les droits pour s’amuser à bâtir un petit chalet pour les vacances !<br>
+
+                Commence par créer un dossier <code>chalet</code>.<br><br>
+
+                Tout en restant dans <code>~/Documents</code>, créé un fichier <code>fauteuil1</code>.<br>
+                Déplace le fichier <code>fauteuil1</code> dans le dossier <code>chalet</code> avec la commande suivante
+                :<br>
+                <code>mv fauteuil1 chalet</code>
+            </p>
+            <p>
+                Créé les dossiers suivants dans le sous-dossier <code>~/Documents/chalet</code> :
+            </p>
+            <ul>
+                <li><code>armure</code></li>
+                <li><code>armoires</code></li>
+                <li><code>etageres</code></li>
+            </ul>
+            <p>
+                Ensuite, accède au dossier <code>chalet</code> et commence à écrire la commande suivante (sans appuyer
+                sur la touche <code>Entrée</code> à la fin) :<br>
+                <code>cd a</code><br>
+                À la fin de la ligne, appui sur la touche <code>Tab</code> deux fois : la console devrait te présenter
+                tous les dossiers commençant par <code>a</code>.<br><br>
+
+                Complètes ta commande par :<br>
+                <code>cd armo</code><br>
+
+                Puis appui sur la touche <code>Tab</code> : la console devrait te compléter la commande entière.<br>On
+                appelle ça l’autocomplétion !<br><br>
+                Exécute la commande pour aller dans le dossier <code>armoire</code>, puis utilise la commande pour
+                revenir dans le dossier précédent.
+            </p>
+            <p>
+                Enfin, nous allons ajouter des fauteuils à notre <code>chalet</code>, un seul n’est pas suffisant !<br>
+
+                Utilise la commande suivante pour copier un fichier :<br>
+                <code>cp fauteuil1 fauteuil2</code><br><br>
+
+                Affiche le contenu du répertoire et tu trouveras bien deux fauteuils !
+            </p>
+            <p>
+                Enfin, toujours dans ton dossier <code>chalet</code>, créé un fichier <code>bibelots</code>.<br><br>
+
+                Accède au dossier <code>armoires</code>.
+
+                Déplace le fichier <code>bibelots</code> du répertoire précédent dans ton dossier actuel. Pour ce faire,
+                utilise la commande suivante :<br>
+
+                <code>mv ../bibelots .</code><br><br>
+
+                Comme vu précédemment, les deux points <code>..</code> représentent le dossier parent et le point <code>.</code>
+                représente le dossier actuel.
+            </p>
+            <p>
+                Quand le fichier <code>bibelots</code> est présent dans ton <code>armoires</code>, sans bouger de là,
+                copie ce fichier dans le dossier <code>etageres</code>, présent dans <code>chalet</code>.<br><br>
+
+                Enfin, nous allons observer le contenu de ton <code>chalet</code>. Pour se faire, revient dans <code>~/Documents</code>.<br><br>
+
+                Essai la commande suivante :<br>
+                <code>find chalet</code><br><br>
+
+                Si tu as bien travaillé, ton chalet ressemblera à ça :<br>
+                <code>
+                    chalet<br>
+                    chalet/fauteuil1<br>
+                    chalet/etageres<br>
+                    chalet/etageres/bibelots<br>
+                    chalet/armure<br>
+                    chalet/fauteuil2<br>
+                    chalet/armoires<br>
+                    chalet/armoires/bibelots<br>
+                </code>
+            </p>
+            <p>
+                Félicitation ! Tu as le droit de continuer de t’amuser avec ton châlet. Pense à le supprimer plus tard
+                (en ligne de commande) quand tu auras fini de jouer !
+            </p>
+        </div>
+    </div>
+
+    <!-- Begin Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <p>
+                        <strong class="has-text-weight-semibold">
+                            <a href="https://www.wildcodeschool.com">Wild Code School</a>
+                        </strong>
+                    </p>
+                    <p>
+                        Learn tech skills with passion
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Footer -->
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/showcase.js"></script>
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        easing: "ease-out",
+        duration: 800,
+    });
+</script>
+<script src="js/prism.js"></script>
+</body>
+</html>
